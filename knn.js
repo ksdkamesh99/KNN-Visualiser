@@ -16,18 +16,25 @@ function setup(){
 	classes.option('B');
 	classes.option('C');
 	knnClassifier = ml5.KNNClassifier();
-	training_start=createButton('train');
+	training_start=createButton('Start Training');
 	training_start.position(600,350);
 	training_start.mousePressed(training);
-	training_stop=createButton('train stop');
+	training_stop=createButton('Stop Training');
 	training_stop.position(600,400);
 	training_stop.mousePressed(training_stops);
-	predict=createButton('predict');
+	predict=createButton('Predict');
 	predict.position(600,450);
 	predict.mousePressed(predicts);
+	reset=createButton('Reset');
+	reset.position(600,500);
+	reset.mousePressed(reloads);
 
 
 
+}
+
+function reloads(){
+	location.reload();
 }
 
 function training_stops(){
