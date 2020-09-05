@@ -48,7 +48,18 @@ function gotresults(err,result){
 	}
 	else{
 		class_lab=result.label;
-		console.log(result.label);		
+		console.log(result.label);
+		if(class_lab=='A'){
+			fill(255,0,0);
+		}
+		else if(class_lab=='B'){
+			fill(0,255,0);
+		}
+		else if(class_lab=='C'){
+			fill(0,0,255);
+		}		
+		ellipse(mouseX,mouseY,30,30);
+
 		text(class_lab,mouseX,mouseY);
 
 	}
@@ -57,9 +68,18 @@ function mousePressed(){
 	stroke(0);
 	console.log(status);
 	if(status=='train'){
-		fill(255);
-		ellipse(mouseX,mouseY,30,30);
 		class_val=classes.value();
+		if(class_val=='A'){
+			fill(255,0,0);
+		}
+		else if(class_val=='B'){
+			fill(0,255,0);
+		}
+		else if(class_val=='C'){
+			fill(0,0,255);
+		}
+		ellipse(mouseX,mouseY,30,30);
+
 		text(class_val,mouseX,mouseY);
 
 		knnClassifier.addExample([mouseX,mouseY],class_val);
@@ -68,8 +88,6 @@ function mousePressed(){
 	}
 	if(status=='predict'){
 		if(knnClassifier.getNumLabels()>0){
-		fill(255);
-		ellipse(mouseX,mouseY,30,30);
 		knnClassifier.classify([mouseX,mouseY],gotresults);
 	
 		}
