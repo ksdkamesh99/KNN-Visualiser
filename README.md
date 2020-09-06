@@ -4,7 +4,14 @@
 [![forthebadge](https://forthebadge.com/images/badges/its-not-a-lie-if-you-believe-it.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 
-<center><img src="https://miro.medium.com/max/1148/1*X1KBJctko0RH6BWBsu-XjA.png"></center>
+<p align="center">
+  <a href="https://github.com/ksdkamesh99/KNN-Visualiser">
+    <img src="https://miro.medium.com/max/1148/1*X1KBJctko0RH6BWBsu-XjA.png" alt="Logo" width="300px" height="300px">
+  </a>
+</p>
+<center><img src=""></center>
+
+
 # Introduction:-
 
 It is a best Visualiser for implementing KNN Algorithm with 3 different classes i.e A,B,C.  
