@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ksdkamesh99/KNN-Visualiser">
-    <img src="https://miro.medium.com/max/1148/1*X1KBJctko0RH6BWBsu-XjA.png" alt="Logo" width="300px" height="300px">
+    <img src="https://miro.medium.com/max/1148/1*X1KBJctko0RH6BWBsu-XjA.png" alt="Logo">
   </a>
 </p>
 <center><img src=""></center>
@@ -27,6 +27,7 @@ It is developed using ml5.js and p5.js.
 3. Once marking of classes is done then click on “Stop Training” button and then click on “Start Prediction” button.
 4. Now click on canvas and predictions will be seen and you can visualise the KNN Algorithm.
 5. Enjoy Learning!
+6. Drop a ⭐ on the Github Repository. 
 
 
 # Bug / Feature Request
