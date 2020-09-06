@@ -22,11 +22,11 @@ It is developed using ml5.js and p5.js.
 
 
 # Bug / Feature Request
-If you find a bug (gave undesired results), kindly open an issue [here](https://github.com/ksdkamesh99/Flight-Price-Prediction/issues/new/choose) by including your search query and the expected result.
+If you find a bug (gave undesired results), kindly open an issue [here](https://github.com/ksdkamesh99/KNN-Visualiser/issues/new/choose) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ksdkamesh99/Flight-Price-Prediction/issues/new/). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ksdkamesh99/KNN-Visualiser/issues/new/). Please include sample queries and their corresponding results.
 
 
-## 📧Contact:-
+# Contact:-
 For any kind of suggesstions/ help in code Please mail me at ksdkamesh99@gmail.com.
 
