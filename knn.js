@@ -7,9 +7,13 @@ let class_lab;
 let knnClassifier;
 let classes;
 function setup(){
-	createCanvas(500,500);
+	var canvas=createCanvas(500,500);
+	 canvas.parent('sketch-holder');
+
 	background(255,255,255);
 	strokeWeight(2);
+	
+
 	classes=createSelect();
 	classes.position(600,300);
 	classes.option('A');
@@ -28,7 +32,7 @@ function setup(){
 	reset=createButton('Reset');
 	reset.position(600,500);
 	reset.mousePressed(reloads);
-
+	
 
 
 }
@@ -120,4 +124,5 @@ function mousePressed(){
 }
 
 function draw(){
+
 }
