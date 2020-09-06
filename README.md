@@ -12,7 +12,7 @@
 
 # Live Demo:-
 
-It is deployed using github pages. You can check out the visualiser [here[(https://ksdkamesh99.github.io/KNN-Visualiser/).
+It is deployed using github pages. You can check out the visualiser [here](https://ksdkamesh99.github.io/KNN-Visualiser/) .
 
 # Introduction:-
 
