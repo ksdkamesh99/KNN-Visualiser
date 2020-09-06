@@ -34,6 +34,8 @@ function setup(){
 }
 
 function reloads(){
+	knnClassifier.clearAllLabels();
+
 	location.reload();
 }
 
@@ -53,7 +55,7 @@ function gotresults(err,result){
 	if(err){
 		console.error(err);
 	}
-	else{
+	else if (mouseX<=500 && mouseY<=500) {
 		class_lab=result.label;
 		console.log(result.label);
 		if(class_lab=='A'){
@@ -65,18 +67,16 @@ function gotresults(err,result){
 		else if(class_lab=='C'){
 			fill(0,0,255);
 		}	
-				if (mouseX<=500 && mouseY<=500) {
 	
 		ellipse(mouseX,mouseY,30,30);
 
 		text(class_lab,mouseX,mouseY);
-	}
+	
 
 	}
 }
 function mousePressed(){
 	stroke(0);
-	console.log(status);
 	if(status=='train'){
 		class_val=classes.value();
 		if(class_val=='A'){
@@ -89,6 +89,7 @@ function mousePressed(){
 			fill(0,0,255);
 		}
 		if (mouseX<=500 && mouseY<=500) {
+	console.log(status);
 
 			ellipse(mouseX,mouseY,30,30);
 
@@ -105,6 +106,8 @@ function mousePressed(){
 	}
 	if(status=='predict'){
 		if(knnClassifier.getNumLabels()>0){
+				console.log(status);
+
 		knnClassifier.classify([mouseX,mouseY],gotresults);
 	
 		}
