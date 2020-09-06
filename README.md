@@ -16,7 +16,7 @@ It is deployed using github pages. You can check out the visualiser [here](https
 
 # Introduction:-
 
-It is a best Visualiser for implementing KNN Algorithm with 3 different classes i.e A,B,C.  
+It is a best Visualiser for implementing K-Nearest Neighbours Algorithm with 3 different classes i.e A,B,C.  
 
 It is implemented completely using JavaScript.  
 
