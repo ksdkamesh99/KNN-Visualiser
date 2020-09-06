@@ -9,8 +9,10 @@
     <img src="https://miro.medium.com/max/1148/1*X1KBJctko0RH6BWBsu-XjA.png" alt="Logo">
   </a>
 </p>
-<center><img src=""></center>
 
+# Live Demo:-
+
+It is deployed using github pages. You can check out the visualiser [here[(https://ksdkamesh99.github.io/KNN-Visualiser/).
 
 # Introduction:-
 
