@@ -64,10 +64,13 @@ function gotresults(err,result){
 		}
 		else if(class_lab=='C'){
 			fill(0,0,255);
-		}		
+		}	
+				if (mouseX<=500 && mouseY<=500) {
+	
 		ellipse(mouseX,mouseY,30,30);
 
 		text(class_lab,mouseX,mouseY);
+	}
 
 	}
 }
@@ -85,12 +88,19 @@ function mousePressed(){
 		else if(class_val=='C'){
 			fill(0,0,255);
 		}
-		ellipse(mouseX,mouseY,30,30);
+		if (mouseX<=500 && mouseY<=500) {
+
+			ellipse(mouseX,mouseY,30,30);
 
 		text(class_val,mouseX,mouseY);
 
 		knnClassifier.addExample([mouseX,mouseY],class_val);
 
+
+		} else {
+
+		}
+		
 
 	}
 	if(status=='predict'){
