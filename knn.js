@@ -107,5 +107,4 @@ function mousePressed(){
 }
 
 function draw(){
-			
 }
