@@ -19,3 +19,10 @@ It is developed using ml5.js and p5.js.
 3. Once marking of classes is done then click on “Stop Training” button and then click on “Start Prediction” button.
 4. Now click on canvas and predictions will be seen and you can visualise the KNN Algorithm.
 5. Enjoy Learning!
+
+
+## Bug / Feature Request
+If you find a bug (gave undesired results), kindly open an issue [here](https://github.com/ksdkamesh99/Flight-Price-Prediction/issues/new/choose) by including your search query and the expected result.
+
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/ksdkamesh99/Flight-Price-Prediction/issues/new/). Please include sample queries and their corresponding results.
+
