@@ -102,8 +102,6 @@ function mousePressed(){
 		knnClassifier.addExample([mouseX,mouseY],class_val);
 
 
-		} else {
-
 		}
 		
 
