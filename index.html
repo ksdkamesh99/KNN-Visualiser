@@ -21,25 +21,40 @@
 		#sketch-holder .p5Canvas{
 			 width:100% !important;
 		 }
+		
 
-		body button ,select{
-			width:110px;
-			left:1% !important;
+		#guide{
+			margin-top: 30px;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div class="container md-4">
 	<h1><center>KNN Visualiser</center></h1>
 	<div class="row text-center">
 	
 		<div id="sketch-holder" class="col-sm-12 col-lg-6 col-xl-6 col-md-12">
+			<div id="sketch-buttons" class="row col-sm-12 col-lg-12 col-xl-12 col-md-12 text-right"></div>
 	</div>
 	<br><br>
-			<img src="steps.PNG" width="500px" height="500px" style="position: relative;" class="col-sm-12 col-lg-6 col-xl-6 col-md-12">
+			<img id="guide" src="steps.PNG" width="500px" height="500px" style="position: relative;" class="col-sm-12 col-lg-6 col-xl-6 col-md-12">
 
 </div>
+</div>
 <br><br>
+<script>
+	window.onload = () => {
+		let buttonContainer = document.querySelector('#sketch-buttons')
+		let buttons = document.querySelectorAll('button,select')
+	
+		buttons.forEach(button => {
+			button.classList.add('btn-dark')
+			buttonContainer.appendChild(button);
+			button.style.cssText =""
+	
+	})
+	}
+	</script>
 </body>
 <footer><center>Made with <img src="love.ico"> by <strong>ksdkamesh99</strong></center>
 </footer>
