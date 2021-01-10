@@ -17,20 +17,52 @@
 			background-color: pink;
 			overflow-x: hidden;
 		}
+
+		#sketch-holder .p5Canvas{
+			 width:100% !important;
+		 }
+		
+
+		#guide{
+			margin-top: 30px;
+		}
+
+		body .container > .row{
+			 background-color:#0e0b0b !important;
+			  }
 	</style>
 </head>
 <body>
+	<div class="container md-4">
 	<h1><center>KNN Visualiser</center></h1>
-	<div class="row align-items-center">
+	<div class="row text-center">
 	
-		<div id="sketch-holder" class="col-md-8 col-sm-8 col-lg-6 col-xl-6">
+		<div id="sketch-holder" class="col-sm-12 col-lg-6 col-xl-6 col-md-12">
+			<div id="sketch-buttons" class="row col-sm-12 col-lg-12 col-xl-12 col-md-12 text-right"></div>
 	</div>
 	<br><br>
-			<img src="steps.PNG" width="00px" height="500px" style="position: relative;" class="col-md-8 col-sm-8 col-lg-6 col-xl-6">
+			<img id="guide" src="steps.PNG" width="500px" height="500px" style="position: relative;" class="col-sm-12 col-lg-6 col-xl-6 col-md-12">
 
 </div>
+</div>
 <br><br>
+<script>
+	// - appends floating knn.js buttons to #sketch-buttons div 
+	// - adds some styles to the buttons
+	window.onload = () => {
+		let buttonContainer = document.querySelector('#sketch-buttons')
+		let buttons = document.querySelectorAll('button,select')
+	
+		buttons.forEach(button => {
+			button.classList.add('btn-dark')
+			buttonContainer.appendChild(button);
+			button.style.cssText =""
+	
+	})
+	}
+	</script>
 </body>
 <footer><center>Made with <img src="love.ico"> by <strong>ksdkamesh99</strong></center>
 </footer>
+</div>
 </html>
