@@ -26,6 +26,10 @@
 		#guide{
 			margin-top: 30px;
 		}
+
+		body .container > .row{
+			 background-color:#0e0b0b !important;
+			  }
 	</style>
 </head>
 <body>
@@ -43,6 +47,8 @@
 </div>
 <br><br>
 <script>
+	// - appends floating knn.js buttons to #sketch-buttons div 
+	// - adds some styles to the buttons
 	window.onload = () => {
 		let buttonContainer = document.querySelector('#sketch-buttons')
 		let buttons = document.querySelectorAll('button,select')
